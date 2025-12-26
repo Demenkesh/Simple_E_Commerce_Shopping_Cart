@@ -45,7 +45,7 @@ This project was completed as a practical assessment task, demonstrating Laravel
 ```
 ### 2. Install dependencies:
 ```bash
-composer updtae
+composer update
 npm install
 npm run build
 ```
