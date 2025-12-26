@@ -39,7 +39,7 @@ class ProductList extends Component
                 ->where('product_id', $productId)
                 ->first();
 
-            if ($cartItem && ($product->stock_quantity - $cartItem->quantity) <= 335) {
+            if ($cartItem && ($product->stock_quantity - $cartItem->quantity) <= 5) {
                 LowStockNotificationJob::dispatch($product);
             }
 
